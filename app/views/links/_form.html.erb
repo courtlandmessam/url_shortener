@@ -13,11 +13,13 @@
 
   <div class="field">
     <%= f.label 'Insert number below at the end of this url "http://localhost:3000/"' %>
-    <%= f.number_field :in_url, value: rand(100), :disabled=>true %>
+    <%= f.number_field :in_url, value: rand(100)%>
   </div>
 
   <div class="field">
-    <%= f.label :out_url %>
+    <div style="font-width: bold;">
+      <strong>Please put full url. (Ex: https://www.facebook.com/)</strong>
+    </div>
     <%= f.text_area :out_url %>
   </div>
 
