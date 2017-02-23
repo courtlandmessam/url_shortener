@@ -1,18 +1,13 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>In url:</strong>
+  <strong>Insert number below at the end of this url "http://localhost:3000/links/"</strong>
   <%= @link.in_url %>
 </p>
 
 <p>
-  <strong>Out url:</strong>
+  <strong>Redirected to:</strong>
   <%= @link.out_url %>
-</p>
-
-<p>
-  <strong>Http status:</strong>
-  <%= @link.http_status %>
 </p>
 
 <%= link_to 'Edit', edit_link_path(@link) %> |
